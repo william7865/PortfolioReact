@@ -13,7 +13,7 @@
   
   /* Ajouter la bordure dorée */
   border: 5px solid gold; /* Bordure dorée épaisse */
-  border-radius: 4px; /* Coins arrondis */
+  
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Optionnel : une légère ombre */
 }
 
@@ -30,8 +30,7 @@
   width: 500px;
   height: auto;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
   z-index: 0;
   animation: lantern-appear 2s ease-in-out;
 }

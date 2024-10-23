@@ -1,0 +1,171 @@
+/* Styles généraux */
+body {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.portfolio {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 60px; /* Ajuste la position verticale */
+    right: 50px; /* Ajuste la position horizontale */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* S'assurer que le bouton est au-dessus de la nav */
+}
+
+/* Styles pour les barres */
+.bar {
+    width: 30px; /* Largeur des barres */
+    height: 4px; /* Hauteur des barres */
+    background-color: #111; /* Couleur des barres par défaut */
+    margin: 4px 0; /* Espace entre les barres */
+    transition: all 0.3s ease; /* Animation douce */
+}
+
+/* Styles pour la croix */
+.menu-toggle.open .bar1 {
+    transform: rotate(45deg) translate(1px, 2px); /* Rotation de 45 degrés */
+    margin: 0; /* Supprime l'espace */
+    background-color: #fff; /* Change la couleur en blanc */
+}
+
+.menu-toggle.open .bar2 {
+    transform: rotate(-45deg) translate(1px, -2px); /* Rotation de -45 degrés */
+    margin: 0; 
+    background-color: #fff; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    padding: 10px;
+    background-color: #111;
+    margin-top: 10px; /* Optionnel pour espacer de l'icône */
+    position: absolute; /* Positionnement absolu */
+    right: 0; /* Commence à droite */
+    transform: translateX(100%); /* Cache la nav à droite */
+    transition: transform 0.6s ease; /* Transition douce pour le mouvement */
+    width: 100%; /* Définit la largeur de la nav à 100% de l'écran */
+    max-width: 500px; /* Limite la largeur maximale si nécessaire */
+}
+
+.navbar.active {
+    transform: translateX(0); /* Fait apparaître la nav */
+}
+
+.nav-logo {
+    width: 60px; 
+    filter: brightness(0) invert(1); 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section Héros */
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-dragon {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Classe pour masquer les éléments au départ */
+.hidden {
+    opacity: 0; /* Rend l'élément invisible */
+}
+
+/* Animations pour la section Héros */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* L'élément commence invisible */
+        transform: translateY(20px); /* Déplace légèrement vers le bas */
+    }
+    100% {
+        opacity: 1; /* L'élément devient visible */
+        transform: translateY(0); /* Repositionne à la place originale */
+    }
+}
+
+.hero h1,
+.hero h2,
+.hero-dragon {
+    animation: fadeIn 0.8s ease forwards; /* Applique l'animation */
+}
+
+.hero h1 {
+    animation-delay: 0.2s; /* Délai pour le titre principal */
+}
+
+.hero h2 {
+    animation-delay: 0.4s; /* Délai pour le sous-titre */
+}
+
+.hero-dragon {
+    animation-delay: 0.6s; /* Délai pour l'image */
+}
+
+/* Section Projets */
+.projects {
+    padding: 40px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: #eee;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin-top: 10px;
+}

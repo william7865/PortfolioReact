@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Animation from './Animation';
+import MainPage from './MainPage'; // Importer la nouvelle page
 import '../styles/App.css';
 
 function App() {
@@ -12,11 +13,7 @@ function App() {
   return (
     <div className="App">
       {!showMainPage && <Animation onAnimationEnd={handleAnimationEnd} />}
-      {showMainPage && (
-        <div className="main-page">
-          <h1>Bienvenue sur la page principale !</h1>
-        </div>
-      )}
+      {showMainPage && <MainPage />} {/* Afficher la page principale */}
     </div>
   );
 }
