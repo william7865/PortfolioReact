@@ -1,0 +1,75 @@
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b22222; /* Rouge pour le thème chinois */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 0 15%; /* Espace pour éviter les superpositions */
+  
+  /* Ajouter la bordure dorée */
+  border: 5px solid gold; /* Bordure dorée épaisse */
+  border-radius: 4px; /* Coins arrondis */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Optionnel : une légère ombre */
+}
+
+/* Image du dragon */
+.dragon {
+  width: 500px;
+  height: auto;
+  animation: appear 2s ease-in-out;
+  z-index: 1; /* Assurer que le dragon est au-dessus des lanternes */
+}
+
+/* Lanternes */
+.lanterne {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+  animation: lantern-appear 2s ease-in-out;
+}
+
+.lanterne-gauche {
+  left: 0;
+}
+
+.lanterne-droite {
+  right: 0;
+}
+
+/* Animation d'apparition du dragon */
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Animation d'apparition des lanternes */
+@keyframes lantern-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-50%) translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-50%) translateX(0);
+  }
+}
+
+/* Classe qui déclenche la disparition en fondu */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
