@@ -1,64 +1,48 @@
 .skills {
-    padding: 2rem;
-    background-color: #f0f0ff; /* Couleur de fond comme dans votre image */
+    padding: 40px;
     text-align: center;
+    background-color: transparent; /* Fond transparent */
   }
   
-  .skills h2 {
-    color: #4a58e0; /* Couleur du titre */
-    margin-bottom: 1.5rem;
+  .skills h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   
-  .skills-container {
+  .skills-list {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 50px;
   }
   
-  .skills-column {
-    background-color: #ffffff; /* Fond des boîtes de compétences */
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    width: 300px;
+  .skill-category {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
   }
   
-  .skills-column h3 {
-    color: #4a58e0; /* Couleur du titre de colonne */
-    margin-bottom: 1.5rem;
+  .skill-category h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
   
-  ul {
+  .skill-category ul {
     list-style: none;
     padding: 0;
   }
   
-  li {
+  .skill-category ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    gap: 10px;
   }
   
-  .icon {
-    font-size: 1.5rem; /* Taille des icônes */
-    margin-right: 10px;
-    color: #4a58e0;
-  }
-  
-  .skill-name {
-    font-weight: bold;
-    color: #333;
-    flex-grow: 1; /* Assure que le texte prend l'espace disponible */
-  }
-  
-  .skill-level {
-    color: #888;
-  }
-  
-  /* Optionnel : pour des effets au survol */
-  li:hover .skill-name {
-    color: #4a58e0;
+  .skill-category ul li svg {
+    font-size: 1.5rem;
+    color: #6a6a6a;
   }
   
