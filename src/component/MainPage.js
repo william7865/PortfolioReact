@@ -1,6 +1,9 @@
+// MainPage.js
 import React, { useState, useEffect } from 'react';
 import '../styles/MainPage.css'; // Importer le CSS
 import dragon from '../assets/dragon2.png'; // Image du dragon
+import About from './About'; // Importer la section À Propos
+import Skills from './Skills'; // Importer la section Compétences
 
 const Portfolio = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // État pour contrôler la barre de navigation
@@ -34,23 +37,24 @@ const Portfolio = () => {
         <img src={dragon} alt="Dragon" className="nav-logo" />
         <ul className="nav-links">
           <li><a href="#about">À Propos</a></li>
+          <li><a href="#skills">Compétences</a></li> {/* Lien vers la section Compétences */}
           <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contactez-moi</a></li>
         </ul>
       </nav>
 
       {/* Section Héros avec Dragon */}
-      <header className="hero">
-        <h1 className={showHero ? '' : 'hidden'}>Bienvenue !</h1>
-        <h2 className={showHero ? '' : 'hidden'}>Je conçois et développe des outils pour le web</h2>
-        <img src={dragon} alt="Dragon Hero" className={`hero-dragon ${showHero ? '' : 'hidden'}`} />
+      <header className={`hero ${showHero ? 'visible' : ''}`}>
+        <h1>Bienvenue !</h1>
+        <h2>Je conçois et développe des outils pour le web</h2>
+        <img src={dragon} alt="Dragon Hero" className="hero-dragon" />
       </header>
 
       {/* Section À Propos */}
-      <section id="about" className="about">
-        <h3>À Propos</h3>
-        <p>Je suis un développeur web spécialisé dans la création d'applications réactives.</p>
-      </section>
+      <About />
+
+      {/* Section Compétences */}
+      <Skills />
 
       {/* Section Projets */}
       <section id="projects" className="projects">

@@ -3,16 +3,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #b22222; /* Rouge pour le thème chinois */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
   padding: 0 15%; /* Espace pour éviter les superpositions */
-  
-  /* Ajouter la bordure dorée */
-  border: 5px solid gold; /* Bordure dorée épaisse */
   
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Optionnel : une légère ombre */
 }

@@ -1,7 +1,10 @@
+/* MainPage.css */
+
 /* Styles généraux */
 body {
     background-color: #f0f0f0;
     color: #000;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
 }
 
 .portfolio {
@@ -10,35 +13,35 @@ body {
 }
 
 .menu-toggle {
-    position: absolute;
-    top: 60px; /* Ajuste la position verticale */
-    right: 50px; /* Ajuste la position horizontale */
+    position: fixed;
+    top: 65px;
+    right: 45px;
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 10; /* S'assurer que le bouton est au-dessus de la nav */
+    z-index: 10;
 }
 
 /* Styles pour les barres */
 .bar {
-    width: 30px; /* Largeur des barres */
-    height: 4px; /* Hauteur des barres */
-    background-color: #111; /* Couleur des barres par défaut */
-    margin: 4px 0; /* Espace entre les barres */
-    transition: all 0.3s ease; /* Animation douce */
+    width: 30px;
+    height: 4px;
+    background-color: #111;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
 /* Styles pour la croix */
 .menu-toggle.open .bar1 {
-    transform: rotate(45deg) translate(1px, 2px); /* Rotation de 45 degrés */
-    margin: 0; /* Supprime l'espace */
-    background-color: #fff; /* Change la couleur en blanc */
+    transform: rotate(45deg) translate(1px, 2px);
+    margin: 0;
+    background-color: #fff;
 }
 
 .menu-toggle.open .bar2 {
-    transform: rotate(-45deg) translate(1px, -2px); /* Rotation de -45 degrés */
-    margin: 0; 
-    background-color: #fff; 
+    transform: rotate(-45deg) translate(1px, -2px);
+    margin: 0;
+    background-color: #fff;
 }
 
 .navbar {
@@ -47,22 +50,22 @@ body {
     align-items: center; /* Centre le contenu verticalement */
     padding: 10px;
     background-color: #111;
-    margin-top: 10px; /* Optionnel pour espacer de l'icône */
-    position: absolute; /* Positionnement absolu */
-    right: 0; /* Commence à droite */
-    transform: translateX(100%); /* Cache la nav à droite */
-    transition: transform 0.6s ease; /* Transition douce pour le mouvement */
-    width: 100%; /* Définit la largeur de la nav à 100% de l'écran */
-    max-width: 500px; /* Limite la largeur maximale si nécessaire */
+    margin-top: 10px; 
+    position: fixed;
+    right: 0; 
+    transform: translateX(100%); 
+    transition: transform 0.6s ease; /* Animation de la barre de nav */
+    width: 100%;
+    max-width: 500px; 
 }
 
 .navbar.active {
-    transform: translateX(0); /* Fait apparaître la nav */
+    transform: translateX(0); /* Fait apparaître la nav en la déplaçant à droite */
 }
 
 .nav-logo {
-    width: 60px; 
-    filter: brightness(0) invert(1); 
+    width: 60px;
+    filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -80,6 +83,17 @@ body {
 }
 
 /* Section Héros */
+.hero {
+    opacity: 0;
+    transform: translateY(-20px); /* Le header est légèrement déplacé vers le haut au départ */
+    transition: all 0.8s ease-in-out; /* Transition douce */
+}
+
+.hero.visible {
+    opacity: 1;
+    transform: translateY(0); /* Le header se déplace à sa position normale */
+}
+
 .hero {
     text-align: center;
     padding: 50px;
@@ -100,39 +114,38 @@ body {
     margin-top: 20px;
 }
 
-/* Classe pour masquer les éléments au départ */
+/* Animations pour la section Héros */
 .hidden {
-    opacity: 0; /* Rend l'élément invisible */
+    opacity: 0;
 }
 
-/* Animations pour la section Héros */
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* L'élément commence invisible */
-        transform: translateY(20px); /* Déplace légèrement vers le bas */
+        opacity: 0;
+        transform: translateY(20px);
     }
     100% {
-        opacity: 1; /* L'élément devient visible */
-        transform: translateY(0); /* Repositionne à la place originale */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 .hero h1,
 .hero h2,
 .hero-dragon {
-    animation: fadeIn 0.8s ease forwards; /* Applique l'animation */
+    animation: fadeIn 0.8s ease forwards;
 }
 
 .hero h1 {
-    animation-delay: 0.2s; /* Délai pour le titre principal */
+    animation-delay: 0.2s;
 }
 
 .hero h2 {
-    animation-delay: 0.4s; /* Délai pour le sous-titre */
+    animation-delay: 0.4s;
 }
 
 .hero-dragon {
-    animation-delay: 0.6s; /* Délai pour l'image */
+    animation-delay: 0.6s;
 }
 
 /* Section Projets */

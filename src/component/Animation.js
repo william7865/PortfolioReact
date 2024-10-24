@@ -26,14 +26,14 @@ const Animation = ({ onAnimationEnd }) => {
   return (
     isAnimating && (
       <div className={`animation-container ${fadeOut ? 'fade-out' : ''}`}>
-        {/* Lanterne gauche */}
-        <img src={lanterne} alt="Lanterne gauche" className="lanterne lanterne-gauche" />
+        {/* Lanterne gauche *
+        <img src={lanterne} alt="Lanterne gauche" className="lanterne lanterne-gauche" />*/}
         
         {/* Image du dragon */}
         <img src={dragon} alt="Dragon chinois" className="dragon" />
 
-        {/* Lanterne droite */}
-        <img src={lanterne} alt="Lanterne droite" className="lanterne lanterne-droite" />
+        {/*{ Lanterne droite }
+       <img src={lanterne} alt="Lanterne droite" className="lanterne lanterne-droite" />*/}
       </div>
     )
   );
