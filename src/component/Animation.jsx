@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Animation.css';
-import dragon from '../assets/dragon2.png'; // Image du dragon
-import lanterne from '../assets/lanterne.png'; // Nouvelle image de lanterne
+import dragon from '../assets/dragon2.png';
+// import lanterne from '../assets/lanterne.png'; Si on veux ajouter des lanternes à droite et à gauche
 
 const Animation = ({ onAnimationEnd }) => {
   const [isAnimating, setIsAnimating] = useState(true);
