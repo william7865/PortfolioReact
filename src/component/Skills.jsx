@@ -10,12 +10,10 @@ import {
 } from 'react-icons/si';
 import { FaReact, FaGithub, FaSymfony } from 'react-icons/fa'; 
 import '../styles/Skills.css';
-import informations from "../data/informations.json";
-
-const Skills = () => {
+const Skills = ({translations}) => {
   return (
     <section id="skills" className="skills">
-      <h3>{informations.title3}</h3>
+      <h3>{translations.skills}</h3>
       <div className="skills-list">
         <div className="skill-category">
           <h4>Développement Web</h4>

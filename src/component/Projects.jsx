@@ -1,11 +1,11 @@
 import React from 'react';
 import "../styles/Projects.css";
-import projects from '../data/informations.json';
 
-const Projects = () => {
+// Ajoutez un div qui permet de slide vers la gauche ou la droite pour voir les projets suivants ou précédents.
+const Projects = ({translations}) => {
     return (
         <section id="projects" className="projects">
-        <h3>Mes Projets</h3>
+        <h3>{translations.projects}</h3>
         <div className="project-list">
           <div className="project">
             <h4>Projet 1</h4>

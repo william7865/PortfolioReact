@@ -22,7 +22,7 @@ const Portfolio = () => {
 
   const toggleNav = () => {
     setIsNavOpen((prev) => !prev);
-    setIsLanguageOpen(false); // Fermer le menu de langue lorsque la navigation est ouverte
+    setIsLanguageOpen(false);
   };
 
   const toggleLanguageMenu = () => {
@@ -64,14 +64,13 @@ const Portfolio = () => {
         <h2>{translations.heroSubtitle}</h2>
         <img src={dragon} alt="Dragon Hero" className="hero-dragon" />
       </header>
-
       {/* Icône pour afficher le menu de sélection de langue */}
-      <div className="language-selector" style={{ position: 'relative' }}>
+      <div className="language-selector">
         <img
           src={languageIcon}
           alt="Language Selector"
+          className="language-icon"
           onClick={toggleLanguageMenu}
-          style={{ cursor: 'pointer', width: '24px', height: '24px' }} 
         />
         {isLanguageOpen && (
           <div className="language-dropdown">
