@@ -1,8 +1,6 @@
-// LanguageContext.js
 import React, { createContext, useState } from 'react';
-import fr from '../data/fr.json'; // Assurez-vous que le chemin est correct
-import en from '../data/en.json'; // Assurez-vous que le chemin est correct
-
+import fr from '../data/fr.json'; 
+import en from '../data/en.json';
 export const LangContext = createContext();
 
 const LanguageProvider = ({ children }) => {

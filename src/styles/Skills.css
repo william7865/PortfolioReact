@@ -1,11 +1,11 @@
 .skills {
     padding: 40px;
     text-align: center;
-    background-color: transparent; /* Fond transparent */
+    background-color: transparent;
   }
   
-  .skills h3 {
-    font-size: 2rem;
+  .skills h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
   }
   

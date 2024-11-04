@@ -8,9 +8,8 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  padding: 0 15%; /* Espace pour éviter les superpositions */
-  
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Optionnel : une légère ombre */
+  padding: 0 15%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
 }
 
 /* Image du dragon */
@@ -18,10 +17,10 @@
   width: 500px;
   height: auto;
   animation: appear 2s ease-in-out;
-  z-index: 1; /* Assurer que le dragon est au-dessus des lanternes */
+  z-index: 1;
 }
-
-/* Lanternes */
+/* Image des lanternes */
+/*
 .lanterne {
   width: 500px;
   height: auto;
@@ -38,8 +37,6 @@
 .lanterne-droite {
   right: 0;
 }
-
-/* Animation d'apparition du dragon */
 @keyframes appear {
   0% {
     opacity: 0;
@@ -50,8 +47,6 @@
     transform: scale(1) translateY(0);
   }
 }
-
-/* Animation d'apparition des lanternes */
 @keyframes lantern-appear {
   0% {
     opacity: 0;
@@ -62,6 +57,7 @@
     transform: scale(1) translateY(-50%) translateX(0);
   }
 }
+*/
 
 /* Classe qui déclenche la disparition en fondu */
 .fade-out {

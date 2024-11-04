@@ -13,7 +13,7 @@ import '../styles/Skills.css';
 const Skills = ({translations}) => {
   return (
     <section id="skills" className="skills">
-      <h3>{translations.skills}</h3>
+      <h1>{translations.skills}</h1>
       <div className="skills-list">
         <div className="skill-category">
           <h4>Développement Web</h4>

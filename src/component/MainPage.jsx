@@ -55,10 +55,9 @@ const Portfolio = () => {
           <li><a href="#about">{translations.about}</a></li>
           <li><a href="#skills">{translations.skills}</a></li>
           <li><a href="#projects">{translations.projects}</a></li>
-          <li><a href="#contact">{translations.contactMe}</a></li>
+          <li><a href="#contact">{translations.contact}</a></li>
         </ul>
       </nav>
-
       <header className={`hero ${showHero ? 'visible' : ''}`}>
         <h1>{translations.welcome}</h1>
         <h2>{translations.heroSubtitle}</h2>

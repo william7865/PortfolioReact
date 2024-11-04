@@ -1,16 +1,78 @@
-/* About.css */
-
-/* Section À Propos */
 .about {
     padding: 40px;
+    margin: 0 auto;
+}
+.about{
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.8s ease-in-out;
 }
 
+.about.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 .about h3 {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.about p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.content {
+    width: 100%;
+    display:flex;
+    align-items: center;
+
+}
+
+/* Style de l'image */
+.profile-picture {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    flex: 2;
+    padding-left: 30px;
+    color: #555;
+}
+
+.description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-picture {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 20px;
+    }
+
+    .about h3 {
+        font-size: 1.5em; 
+    }
+
+    .description p {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
 }
