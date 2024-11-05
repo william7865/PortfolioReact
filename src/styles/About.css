@@ -1,16 +1,7 @@
 .about {
     padding: 40px;
     margin: 0 auto;
-}
-.about{
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: all 0.8s ease-in-out;
-}
-
-.about.visible {
-    opacity: 1;
-    transform: translateY(0);
+    margin-top: 100px;
 }
 .about h3 {
     text-align: center;
@@ -25,21 +16,32 @@
     align-items: center;
 
 }
-
+.profile-picture.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Style de l'image */
 .profile-picture {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: transform 0,6s ease;
 }
 
 .profile-picture img {
     width: 100%;
     height: auto;
 }
-
+.description.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 .description {
     flex: 2;
     padding-left: 30px;
     color: #555;
+    transform: translateX(120%); 
+    transition: transform 0,6s ease;
 }
 
 .description p {
