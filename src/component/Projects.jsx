@@ -26,18 +26,15 @@ const Projects = ({ translations }) => {
                 <div className="project-list" ref={projectListRef}>
                     <div className="project">
                         <img src={garage} alt="Projet 1" className="project-image" />
-                        <h4>Projet 1</h4>
-                        <p>Description du projet 1.</p>
+                        <h4>Site de Garage</h4>
                     </div>
                     <div className="project">
                         <img src= {resto}alt="Projet 2" className="project-image" />
-                        <h4>Projet 2</h4>
-                        <p>Description du projet 2.</p>
+                        <h4>Site de Restaurant</h4>
                     </div>
                     <div className="project">
                         <img src={voyage}alt="Projet 3" className="project-image" />
-                        <h4>Projet 3</h4>
-                        <p>Description du projet 3.</p>
+                        <h4>Site de Voyage</h4>
                     </div>
                 </div>
                 <button className="scroll-button right" onClick={scrollRight}>

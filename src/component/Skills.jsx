@@ -1,4 +1,5 @@
 import React from 'react';
+import {useEffect, useRef } from 'react';
 import { 
   SiHtml5, 
   SiCss3, 
@@ -10,12 +11,75 @@ import {
 } from 'react-icons/si';
 import { FaReact, FaGithub, FaSymfony } from 'react-icons/fa'; 
 import '../styles/Skills.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 const Skills = ({translations}) => {
+  const sectionRef = useRef(null);
+  const categoryRef = useRef(null);
+  const category2Ref = useRef(null);
+
+  useEffect(() => {
+    // Animation pour la section principale
+    gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 100%", // Quand tu déclenches l'animation
+          end: "bottom 50%", // Quand tu arrêtes l'animation
+          scrub: true, // Pour que l'animation soit fluide
+          toggleActions: "restart reverse restart reverse",
+        },
+      }
+    );
+    gsap.fromTo(
+      categoryRef.current,
+      { opacity: 0, y: 150 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 100%", // Quand tu déclenches l'animation
+          end: "bottom 50%", // Quand tu arrêtes l'animation
+          scrub: true, // Pour que l'animation soit fluide
+          toggleActions: "restart reverse restart reverse",
+        },
+      }
+    );
+    gsap.fromTo(
+      category2Ref.current,
+      { opacity: 0, y: 150 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 100%", // Quand tu déclenches l'animation
+          end: "bottom 50%", // Quand tu arrêtes l'animation
+          scrub: true, // Pour que l'animation soit fluide
+          toggleActions: "restart reverse restart reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section id="skills" className="skills">
+    
+    <section id="skills" className="skills"ref={sectionRef}>
       <h1>{translations.skills}</h1>
       <div className="skills-list">
-        <div className="skill-category">
+        <div className="skill-category"ref={categoryRef}>
           <h4>Développement Web</h4>
           <ul>
           <li><SiHtml5 color="#E34F26" /> HTML</li>
@@ -27,7 +91,7 @@ const Skills = ({translations}) => {
           <li><SiPostgresql color="#336791" /> PostgreSQL</li>
           </ul>
         </div>
-        <div className="skill-category">
+        <div className="skill-category"ref={category2Ref}>
           <h4>Outils</h4>
           <ul>
           <li><SiFigma color="#F24E1E" /> Figma</li>

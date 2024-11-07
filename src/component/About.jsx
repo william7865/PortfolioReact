@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import {useEffect, useRef } from 'react';
 import React from 'react';
 import '../styles/About.css';
 import dev from '../assets/dev.jpeg';

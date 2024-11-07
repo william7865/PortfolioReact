@@ -85,8 +85,10 @@ const Portfolio = () => {
 
       <footer id="contact" className="footer">
         <h3>{translations.contactMe}</h3>
+        <p>&copy;{translations.copyright}</p>
         <p>{translations.contactEmail}</p>
       </footer>
+      
     </div>
   );
 };

@@ -10,12 +10,12 @@ const Animation = ({ onAnimationEnd }) => {
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setFadeOut(true);
-    }, 3000);
+    }, 2000);
 
     const timer2 = setTimeout(() => {
       setIsAnimating(false);
       onAnimationEnd();
-    },  4000);
+    },  3000);
 
     return () => {
       clearTimeout(timer1);
