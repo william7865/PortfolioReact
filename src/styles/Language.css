@@ -10,7 +10,7 @@
     padding: 8px;
     position: fixed;
     right: 10px;
-    bottom: 70px;
+    bottom: 105px;
     transition: transform 0.2s;
     z-index: 1;
 }
@@ -24,7 +24,7 @@
     flex-direction: column;
     position: fixed;
     right: 10px;
-    bottom: 115px;
+    bottom: 150px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);

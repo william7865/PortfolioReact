@@ -9,7 +9,12 @@
     color: #333;
     margin-bottom: 20px;
 }
-
+.projects p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
 .project-container {
     display: flex;
     align-items: center;

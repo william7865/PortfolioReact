@@ -19,6 +19,7 @@ const Projects = ({ translations }) => {
     return (
         <section id="projects" className="projects">
             <h3>{translations.projects}</h3>
+            <p>{translations.projectsDescription}</p>
             <div className="project-container">
                 <button className="scroll-button left" onClick={scrollLeft}>
                     ◀
