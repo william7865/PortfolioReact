@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../styles/Contact.css';
 
-const ContactForm = () => {
+const ContactForm = ({translations}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -50,12 +50,12 @@ const ContactForm = () => {
 
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
-          <label htmlFor="name">Nom et prénom *</label>
+          <label htmlFor="name">{translations.contactName}</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Nom et Prénom *"
+            placeholder={translations.placeholderName}
             value={formData.name}
             onChange={handleChange}
             required
@@ -63,12 +63,12 @@ const ContactForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="email">Email *</label>
+          <label htmlFor="email">{translations.contactEmail}</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Saisissez votre email *"
+            placeholder={translations.placeholderEmail}
             value={formData.email}
             onChange={handleChange}
             required
@@ -76,18 +76,18 @@ const ContactForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Message *</label>
+          <label htmlFor="message">{translations.contactMessage}</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Saisissez votre message *"
+            placeholder={translations.placeholderMessage}
             value={formData.message}
             onChange={handleChange}
             required
           />
         </div>
 
-        <button type="submit" className="submit-button">ENVOYER</button>
+        <button type="submit" className="submit-button">{translations.envoyer}</button>
       </form>
     </div>
   );

@@ -3,7 +3,7 @@ import { LangContext } from './LanguageContext';
 import '../styles/MainPage.css';
 import dragon from '../assets/dragon2.png';
 import languageIcon from '../assets/earth-icon.png';
-import '../styles/Language.css'
+import '../styles/Language.css';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -59,11 +59,13 @@ const Portfolio = () => {
           <li><a href="#contact">{translations.contact}</a></li>
         </ul>
       </nav>
+
       <header className={`hero ${showHero ? 'visible' : ''}`}>
         <h1>{translations.welcome}</h1>
         <h2>{translations.heroSubtitle}</h2>
         <img src={dragon} alt="Dragon Hero" className="hero-dragon" />
       </header>
+
       {/* Icône pour afficher le menu de sélection de langue */}
       <div className="language-selector">
         <img
@@ -88,9 +90,7 @@ const Portfolio = () => {
       <footer id="contact" className="footer">
         <h3>{translations.contactMe}</h3>
         <p>&copy;{translations.copyright}</p>
-        <p>{translations.contactEmail}</p>
       </footer>
-      
     </div>
   );
 };

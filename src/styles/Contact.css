@@ -6,9 +6,10 @@
 }
 
 .contact-form-container h2 {
-    font-size: 32px;
-    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .contact-form-container p {

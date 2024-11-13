@@ -96,7 +96,7 @@ const Skills = ({translations}) => {
           <ul>
           <li><SiFigma color="#F24E1E" /> Figma</li>
           <li><FaGithub color="#181717" /> GitHub</li>
-          <li><SiVisualstudiocode color="#5C2D91" /> Visual Studio</li>
+          <li><SiVisualstudiocode color="#007ACC" /> Visual Studio Code</li>
           </ul>
         </div>
       </div>

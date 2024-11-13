@@ -1,11 +1,19 @@
 {
-    "languageToggle": "Switch Language",
-    "welcome": "Welcome!",
-    "heroSubtitle": "I design and develop tools for the web",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact Me",
-    "email": "Email"
-  }
-  
+  "languageToggle": "Change language",
+  "welcome": "Welcome!",
+  "heroSubtitle": "I design and develop tools for the web",
+  "about": "About",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact me",
+  "descriptions": "I am a web developer passionate about creating tools that improve people's lives. I have experience in designing and developing websites and web applications. I am always looking for new challenges and opportunities to learn and grow as a developer.",
+  "projectsDescription": "Here are some of the projects I've worked on. For more projects, check out my GitHub: ",
+  "placeholderEmail": "Enter your email *",
+  "placeholderName": "Enter your name *",
+  "placeholderMessage": "Enter your message *",
+  "contactName": "Full name *",
+  "contactEmail": "Email *",
+  "contactMessage": "Message *",
+  "copyright": "2024 William Lin. All rights reserved.",
+  "envoyer": "Submit"
+}
