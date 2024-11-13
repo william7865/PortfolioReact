@@ -1,0 +1,89 @@
+.contact-form-container {
+    padding: 40px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form-container p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* Limiter la largeur pour la forme */
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.icon-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: left;
+}
+
+.submit-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Ajuste la largeur au contenu */
+    max-width: 150px; /* Réduit la largeur maximale */
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #ff5a4f;
+}

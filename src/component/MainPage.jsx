@@ -7,6 +7,7 @@ import '../styles/Language.css'
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 
 const Portfolio = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -82,6 +83,7 @@ const Portfolio = () => {
       <About translations={translations} />
       <Skills translations={translations} />
       <Projects translations={translations} />
+      <Contact translations={translations} />
 
       <footer id="contact" className="footer">
         <h3>{translations.contactMe}</h3>

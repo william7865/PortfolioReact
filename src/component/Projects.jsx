@@ -3,6 +3,7 @@ import "../styles/Projects.css";
 import garage from "../assets/garage.png";
 import resto from "../assets/resto.png";
 import voyage from "../assets/voyage.png";
+import {FaGithub} from 'react-icons/fa';
 const Projects = ({ translations }) => {
     const projectListRef = useRef(null);
 
@@ -19,7 +20,7 @@ const Projects = ({ translations }) => {
     return (
         <section id="projects" className="projects">
             <h3>{translations.projects}</h3>
-            <p>{translations.projectsDescription}</p>
+            <p>{translations.projectsDescription}<a href =" https://github.com/william7865"><FaGithub color="#181717"/></a></p>
             <div className="project-container">
                 <button className="scroll-button left" onClick={scrollLeft}>
                     ◀

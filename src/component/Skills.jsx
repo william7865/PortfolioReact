@@ -6,8 +6,8 @@ import {
   SiJavascript, 
   SiPhp, 
   SiFigma, 
-  SiVisualstudio,
-  SiPostgresql
+  SiPostgresql,
+  SiVisualstudiocode
 } from 'react-icons/si';
 import { FaReact, FaGithub, FaSymfony } from 'react-icons/fa'; 
 import '../styles/Skills.css';
@@ -96,7 +96,7 @@ const Skills = ({translations}) => {
           <ul>
           <li><SiFigma color="#F24E1E" /> Figma</li>
           <li><FaGithub color="#181717" /> GitHub</li>
-          <li><SiVisualstudio color="#5C2D91" /> Visual Studio</li>
+          <li><SiVisualstudiocode color="#5C2D91" /> Visual Studio</li>
           </ul>
         </div>
       </div>
