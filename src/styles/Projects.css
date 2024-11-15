@@ -21,8 +21,8 @@
     overflow: hidden;
     position: relative;
     justify-content: center;
-    width: 80%; /* Ajustez cette valeur selon la taille souhaitée (par exemple, 80%, 70%, ou une valeur en pixels) */
-    margin: auto; /* Centre le conteneur horizontalement */
+    width: 80%; 
+    margin: auto; 
 }
 
 .project-list {
@@ -61,7 +61,7 @@
 .scroll-button {
     background-color: transparent;
     border: none;
-    color: #333; /* Couleur de l'icône de défilement */
+    color: #333;
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
@@ -72,9 +72,9 @@
 }
 
 .scroll-button.left {
-    left: 0px; /* Ajustez cette valeur pour placer les boutons à l'extérieur des bords du conteneur */
+    left: 0px;
 }
 
 .scroll-button.right {
-    right: 0px; /* Ajustez cette valeur de la même manière */
+    right: 0px;
 }
