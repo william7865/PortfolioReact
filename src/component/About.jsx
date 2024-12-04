@@ -24,9 +24,9 @@ const About = ({ translations }) => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 100%", // Quand tu déclenches l'animation
-          end: "bottom 50%", // Quand tu arrêtes l'animation
-          scrub: true, // Pour que l'animation soit fluide
+          start: "top 100%", 
+          end: "bottom 50%",
+          scrub: true, 
           toggleActions: "restart reverse restart reverse",
         },
       }

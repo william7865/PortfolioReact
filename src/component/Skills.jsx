@@ -7,9 +7,15 @@ import {
   SiPhp, 
   SiFigma, 
   SiPostgresql,
-  SiVisualstudiocode
+  SiVisualstudiocode,
+  SiAlpinedotjs,
+  SiMicrosoftexcel,
+  SiMicrosoftword,
+  SiMysql,
+  SiGit
+  
 } from 'react-icons/si';
-import { FaReact, FaGithub, FaSymfony } from 'react-icons/fa'; 
+import { FaReact, FaGithub, FaSymfony} from 'react-icons/fa'; 
 import '../styles/Skills.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -31,9 +37,9 @@ const Skills = ({translations}) => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 100%", // Quand tu déclenches l'animation
-          end: "bottom 50%", // Quand tu arrêtes l'animation
-          scrub: true, // Pour que l'animation soit fluide
+          start: "top 100%", 
+          end: "bottom 50%",
+          scrub: true, 
           toggleActions: "restart reverse restart reverse",
         },
       }
@@ -48,9 +54,9 @@ const Skills = ({translations}) => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 100%", // Quand tu déclenches l'animation
-          end: "bottom 50%", // Quand tu arrêtes l'animation
-          scrub: true, // Pour que l'animation soit fluide
+          start: "top 100%",
+          end: "bottom 50%",
+          scrub: true, 
           toggleActions: "restart reverse restart reverse",
         },
       }
@@ -65,9 +71,9 @@ const Skills = ({translations}) => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 100%", // Quand tu déclenches l'animation
-          end: "bottom 50%", // Quand tu arrêtes l'animation
-          scrub: true, // Pour que l'animation soit fluide
+          start: "top 100%",
+          end: "bottom 50%",
+          scrub: true,
           toggleActions: "restart reverse restart reverse",
         },
       }
@@ -89,6 +95,8 @@ const Skills = ({translations}) => {
           <li><SiPhp color="#777BB4" /> PHP</li>
           <li><FaReact color="#61DAFB" /> React</li>
           <li><SiPostgresql color="#336791" /> PostgreSQL</li>
+          <li><SiAlpinedotjs color="#8BC0D0" /> Alpine.js</li>
+          <li><SiMysql color="#4479A1" /> MySQL</li>
           </ul>
         </div>
         <div className="skill-category"ref={category2Ref}>
@@ -97,6 +105,9 @@ const Skills = ({translations}) => {
           <li><SiFigma color="#F24E1E" /> Figma</li>
           <li><FaGithub color="#181717" /> GitHub</li>
           <li><SiVisualstudiocode color="#007ACC" /> Visual Studio Code</li>
+          <li><SiMicrosoftexcel color="#217346" /> Microsoft Excel</li>
+          <li><SiMicrosoftword color="#2B579A" /> Microsoft Word</li>
+          <li><SiGit color="#F05032" /> Git</li>
           </ul>
         </div>
       </div>

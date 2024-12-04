@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Animation from './Animation';
 import MainPage from './MainPage';
-import LanguageProvider from './LanguageContext'; // Importez le contexte
+import LanguageProvider from './LanguageContext';
 import '../styles/App.css';
 
 function App() {

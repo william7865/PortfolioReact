@@ -24,7 +24,7 @@ const ContactForm = ({translations}) => {
 
   const sendEmail = () => {
     const templateParams = {
-      to_name: 'William.lin@efrei.net', // Votre adresse email
+      to_name: 'William.lin@efrei.net',
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message

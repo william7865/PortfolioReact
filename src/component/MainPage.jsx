@@ -32,7 +32,7 @@ const Portfolio = () => {
 
   const handleLanguageChange = (language) => {
     toggleLang(language);
-    setIsLanguageOpen(false); // Fermer le menu après sélection
+    setIsLanguageOpen(false);
   };
 
   useEffect(() => {
