@@ -24,7 +24,7 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    max-width: 600px; /* Limiter la largeur pour la forme */
+    max-width: 600px; 
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 15px;
+    gap: 5px;
     width: 100%;
 }
 
