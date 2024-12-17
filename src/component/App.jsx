@@ -12,7 +12,7 @@ function App() {
   };
 
   return (
-    <LanguageProvider> {/* Enveloppez ici */}
+    <LanguageProvider> {}
       <div className="App">
         {!showMainPage && <Animation onAnimationEnd={handleAnimationEnd} />}
         {showMainPage && <MainPage />}
